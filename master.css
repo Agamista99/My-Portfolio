@@ -9,88 +9,68 @@
 }
 
 header {
-    background-color: rgb(202, 243, 230);
+    background-color: rgb(83, 162, 182);
     width: 100%;
     position: fixed;
     z-index: 999;
     display: flex;
-    padding: 10px 200px 10px 100px;
+    padding: 10px 30px 10px 40px;
     justify-content: space-between;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 0px 0px 30px 30px;
 }
 
-header>a {
+.logo>a {
     text-decoration: none;
-    color: rgb(16, 70, 170);
+    color: black;
     text-transform: uppercase;
     font-size: 1.8em;
     font-weight: 700;
-
+    padding-left: 10px;
 }
 
-.navigation a {
+nav a {
     text-decoration: none;
-    color: rgb(16, 70, 170);
+    color: black;
     font-size: 1.2em;
     font-weight: 500;
-    padding-left: 30px;
-    text-shadow: 5px 5px 25px rgb(20, 20, 20);
+    padding-right: 10px;
 }
 
-.navigation a:hover {
+nav a:hover {
     color: crimson;
 }
 
 section {
-    padding: 100px 200px;
+    padding: 10% 10% 10% 5%;
 }
 
 .main {
     width: 100%;
     min-height: 100vh;
-    display: flex;
-    align-items: flex-start;
-    padding-top: 250px;
-    background: url(imeges/Black\ hat\ hackers.jfif) no-repeat;
+    padding-top: 180px;
+    background: url(imeges/Black\ hat\ hackers.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    position: relative;
 }
 
-.main .container {
-    position: absolute;
-    z-index: 2;
-}
-
-.main .opacity {
-    background-color: rgb(0 0 0 / 50%);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-}
-
-.main h2 {
+.title-main h2 {
     color: white;
     font-size: 1.4em;
     font-weight: 500;
-    text-shadow: 10px 20px 15px rgb(20, 20, 20);
+    text-shadow: 3px 3px 10px rgb(20, 20, 20);
 }
 
-.main h2 span {
-    color: rgb(47, 50, 236);
+.title-main h3 {
+    color: rgb(9, 11, 114);
     display: inline-block;
     margin-top: 10px;
     font-size: 3em;
-    font-weight: 600;
-    text-shadow: 10px 20px 15px rgb(20, 20, 20);
+    font-weight: 800;
 }
 
-.main h3 {
+.main h4 {
     color: white;
     font-size: 2em;
     font-weight: 700;
@@ -109,13 +89,14 @@ section {
     padding: 0.9375em 2.1875em;
     letter-spacing: 1px;
     border-radius: 20px;
-    margin-bottom: 40px;
+    margin-top: 10%;
+    margin-bottom: 10%;
     transition: 0.7s ease;
     box-shadow: 7px 7px 40px black;
 }
 
 .main-btn:hover {
-    background-color: turquoise;
+    background-color: rgb(66, 69, 238);
     transform: scale(1.1);
 }
 
@@ -132,10 +113,14 @@ section {
 .title {
     display: flex;
     justify-content: center;
-    color: rgb(47, 50, 236);
+    color: black;
     font-size: 2.2em;
     font-weight: 800;
     margin-bottom: 50px;
+}
+
+.cards {
+    background-color: rgb(223, 223, 223);
 }
 
 .content {
@@ -180,6 +165,11 @@ section {
 .projects {
     background-color: rgb(20, 20, 20);
 }
+
+.projects .title {
+    color: white;
+}
+
 .projects .content {
     margin-top: 130px;
 }
@@ -190,10 +180,11 @@ section {
     min-height: 14em;
     width: 23em;
     overflow: hidden;
-    border-radius:10px ;
+    border-radius: 10px;
     margin: 20px;
     transition: 0.6s ease;
 }
+
 .card-project:hover {
     transform: scale(1.1);
     cursor: pointer;
@@ -202,6 +193,7 @@ section {
 .img-project img {
     width: 100%;
 }
+
 .card-project:hover .img-project {
     opacity: 0.95;
 }
@@ -210,7 +202,7 @@ section {
     padding: 1em;
 }
 
-.info-project + p {
+.info-project+p {
     color: black;
     font-size: 0.6em;
     margin-bottom: 10px;
@@ -222,16 +214,23 @@ section {
     text-transform: uppercase;
     margin-top: 10px;
 }
+
 .info-project strong span {
     font-size: 1.2em;
 }
+
 .info-project strong a {
     text-decoration: none;
     color: rgb(47, 50, 236);
     font-size: 1.1;
 }
+
 .info-project strong a:hover {
     color: crimson;
+}
+
+.cards-contact {
+    background-color: rgb(223, 223, 223);
 }
 
 .cards-contact h2 {
@@ -246,131 +245,903 @@ section {
     color: black;
     font-weight: 900;
 }
+
 .cards-contact .info p {
     font-size: 1em;
     font-weight: 500;
 }
 
 footer {
-    background-color: rgb(202, 243, 230);
+    background-color: rgb(83, 162, 182);
     width: 100%;
     padding: 2em;
-    border-radius: 10px;
+    border-radius: 30px 30px 0px 0px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
 footer p {
-    font-size: 1.2em;
+    font-size: 1.3em;
+    padding-left: 1%;
 }
+
 footer p a {
     text-decoration: none;
+    color: black;
 }
+
 footer p a:hover {
     color: crimson;
 }
-footer div a{
+
+footer div a {
     color: black;
-    padding-right:60px ;
+    padding-right: 60px;
     font-size: 2em;
 }
+
 footer div a:hover {
     color: crimson;
 }
+
 footer div {
     display: flex;
     justify-content: space-between;
 }
 
-@media (max-width:400px) {
+@media (max-width:280px) {
     header {
-        padding: 5px 10px 5px 20px;
-        border-radius: 1px;
+        padding: 5px 0px 5px 0px;
+        border-radius: 0px 0px 13px 13px;
     }
-    header>a {
-        font-size: 0.9em;
+
+    .logo>a {
+        font-size: 0.8em;
+        font-weight: 700;
+        margin-left: 5px;
+    }
+
+    nav {
+        margin-right: 15px;
+    }
+
+    nav a {
+        font-size: 0.40em;
         font-weight: 500;
     }
-    .navigation a {
-        font-size: 0.9em;
-        font-weight: 300;
-        padding-left: 5px;
-    }
+
     section {
-        padding: 10px 10px ;
+        padding: 10px 10px;
     }
+
     .main {
-        width: 100%;
-        min-height: 100vh;
-        display: flex;
-        align-items: flex-start;
-        padding-top: 150px;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
+        padding-top: 200px;
     }
-    .main h2 {
-        font-size: 1.1em;
+
+    .title-main h2 {
+        font-size: 1.3em;
         font-weight: 300;
+        padding-left: 60px;
+        padding-top: 15px;
     }
-    .main h2 span {
+
+    .title-main h3 {
         font-size: 2em;
         font-weight: 500;
+        padding-left: 60px;
+        padding-top: 10px;
+        color: rgb(29, 32, 221)
     }
-    .main h3 {
+
+    .title-main h4 {
         font-size: 1.1em;
-        font-weight: 300;
+        font-weight: 700;
         letter-spacing: 1px;
-        margin: 10px 50px 30px 0px;
+        margin: 20px 10px 40px 60px;
+
     }
+
     .main-btn {
-        font-size: 1em;
-        font-weight: 400px;
-        padding: 0.9375em 2.1875em;
+        font-size: 1.2em;
+        font-weight: 300px;
+        padding: 0.7375em 1.1875em;
         letter-spacing: 1px;
-        border-radius: 20px;
-        margin-bottom: 40px;
-        margin-top: 40px;
-        box-shadow: 7px 7px 40px black;
+        border-radius: 10px;
+        margin: 1% 0% 12% 18%;
     }
+
+    .social-icons {
+        margin-left: 13%;
+    }
+
+    .social-icons a {
+        font-size: 1.7em;
+        padding: 0px 40px 0px 10px;
+    }
+
     .title {
         font-size: 2.2em;
         font-weight: 800;
         margin-bottom: 50px;
         margin-top: 25px;
     }
+
     .info h3 {
         margin-top: 35px;
     }
+
     .card-project {
         background-color: white;
         border: 1px solid #fff;
         min-height: 14em;
         width: 23em;
     }
-    .info-project + p {
+
+    .info-project+p {
         font-size: 0.4em;
         margin-bottom: 8px;
     }
+
     .info-project strong span {
         font-size: 1em;
     }
+
     .info-project strong a {
         font-size: 0.9;
     }
+
     .cards-contact h2 {
         font-size: 2em;
         font-weight: 700;
         margin: 25px 0px 100px 0px;
     }
+
     footer {
-        padding: 20px 0px 20px 10px;
-        border-radius: 5px;
+        padding: 20px 0px 10px 10px;
+        border-radius: 15px 15px 0px 0px;
     }
+
     footer p {
         font-size: 0.6em;
     }
-    footer div a{
-        padding-right:15px ;
+
+    footer div a {
+        padding-right: 11px;
         font-size: 1em;
+        display: none;
+    }
+}
+
+@media (min-width:281px) and (max-width:360px) {
+    header {
+        padding: 5px 0px 5px 0px;
+        border-radius: 0px 0px 13px 13px;
+    }
+
+    .logo>a {
+        font-size: 1em;
+        font-weight: 500;
+        padding-left: 15px;
+    }
+
+    nav {
+        font-size: 0.45em;
+        font-weight: 100;
+        padding-right: 5px;
+    }
+
+    section {
+        padding: 10px 10px;
+    }
+
+    .main {
+        width: 100%;
+        min-height: 100vh;
+        padding-top: 280px;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .title-main h2 {
+        font-size: 1.3em;
+        font-weight: 300;
+        padding-left: 85px;
+    }
+
+    .title-main h3 {
+        font-size: 2em;
+        font-weight: 500;
+        padding-left: 40px;
+        padding-top: 13px;
+        color: rgb(29, 32, 221)
+    }
+
+    .title-main h4 {
+        font-size: 1.1em;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin: 25px 10px 40px 20px;
+
+    }
+
+    .main-btn {
+        font-size: 1.2em;
+        font-weight: 300px;
+        padding: 0.7375em 1.1875em;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        margin: 10% 0% 15% 23%;
+    }
+
+    .social-icons {
+        margin-left: 15%;
+    }
+
+    .social-icons a {
+        font-size: 1.7em;
+        padding: 0px 40px 0px 20px;
+    }
+
+    .title {
+        font-size: 2.2em;
+        font-weight: 800;
+        margin-bottom: 50px;
+        margin-top: 25px;
+    }
+
+    .info h3 {
+        margin-top: 35px;
+    }
+
+    .card-project {
+        background-color: white;
+        border: 1px solid #fff;
+        min-height: 14em;
+        width: 23em;
+    }
+
+    .info-project+p {
+        font-size: 0.4em;
+        margin-bottom: 8px;
+    }
+
+    .info-project strong span {
+        font-size: 1em;
+    }
+
+    .info-project strong a {
+        font-size: 0.9;
+    }
+
+    .cards-contact h2 {
+        font-size: 2em;
+        font-weight: 700;
+        margin: 25px 0px 100px 0px;
+    }
+
+    footer {
+        padding: 20px 0px 20px 10px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    footer p {
+        font-size: 0.6em;
+    }
+
+    footer div a {
+        padding-right: 15px;
+        font-size: 1em;
+    }
+}
+
+@media (min-width:361px)and (max-width:375px) {
+    header {
+        padding: 5px 0px 5px 0px;
+        border-radius: 0px 0px 13px 13px;
+    }
+
+    .logo>a {
+        font-size: 1em;
+        font-weight: 700;
+        margin-left: 10px;
+    }
+
+    nav {
+        margin-right: 10px;
+    }
+
+    nav a {
+        font-size: 0.55em;
+        font-weight: 500;
+    }
+
+    section {
+        padding: 5% 5%;
+    }
+
+    .main {
+        padding-top: 225px;
+    }
+
+    .title-main h2 {
+        font-size: 1.3em;
+        font-weight: 300;
+        padding-left: 90px;
+        padding-top: 15px;
+    }
+
+    .title-main h3 {
+        font-size: 2em;
+        font-weight: 500;
+        padding-left: 50px;
+        padding-top: 10px;
+        color: rgb(29, 32, 221)
+    }
+
+    .title-main h4 {
+        font-size: 1.1em;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin: 20px 10px 40px 20px;
+
+    }
+
+    .main-btn {
+        font-size: 1.2em;
+        font-weight: 300px;
+        padding: 0.7375em 1.1875em;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        margin: 10% 0% 15% 23%;
+    }
+
+    .social-icons {
+        margin-left: 15%;
+    }
+
+    .social-icons a {
+        font-size: 1.7em;
+        padding: 0px 40px 0px 20px;
+    }
+
+    .title {
+        font-size: 2.2em;
+        font-weight: 800;
+        margin-bottom: 50px;
+        margin-top: 25px;
+    }
+
+    .info h3 {
+        margin-top: 35px;
+    }
+
+    .card-project {
+        background-color: white;
+        border: 1px solid #fff;
+        min-height: 14em;
+        width: 23em;
+    }
+
+    .info-project+p {
+        font-size: 0.4em;
+        margin-bottom: 8px;
+    }
+
+    .info-project strong span {
+        font-size: 1em;
+    }
+
+    .info-project strong a {
+        font-size: 0.9;
+    }
+
+    .cards-contact h2 {
+        font-size: 2em;
+        font-weight: 700;
+        margin: 25px 0px 100px 0px;
+    }
+
+    footer {
+        padding: 20px 0px 10px 10px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    footer p {
+        font-size: 0.6em;
+    }
+
+    footer div a {
+        padding-right: 15px;
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width:376px)and (max-width:395px) {
+    header {
+        padding: 5px 0px 5px 0px;
+        border-radius: 0px 0px 13px 13px;
+    }
+
+    .logo>a {
+        font-size: 1em;
+        font-weight: 700;
+        margin-left: 10px;
+    }
+
+    nav {
+        margin-right: 10px;
+    }
+
+    nav a {
+        font-size: 0.58em;
+        font-weight: 500;
+    }
+
+    section {
+        padding: 5% 5%;
+    }
+
+    .main {
+        padding-top: 245px;
+    }
+
+    .title-main h2 {
+        font-size: 1.3em;
+        font-weight: 300;
+        padding-left: 90px;
+        padding-top: 15px;
+    }
+
+    .title-main h3 {
+        font-size: 1.9em;
+        font-weight: 500;
+        padding-left: 56px;
+        padding-top: 10px;
+        color: rgb(29, 32, 221)
+    }
+
+    .title-main h4 {
+        font-size: 1.1em;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin: 20px 10px 40px 20px;
+
+    }
+
+    .main-btn {
+        font-size: 1.2em;
+        font-weight: 300px;
+        padding: 0.7375em 1.1875em;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        margin: 10% 0% 15% 23%;
+    }
+
+    .social-icons {
+        margin-left: 15%;
+    }
+
+    .social-icons a {
+        font-size: 1.7em;
+        padding: 0px 40px 0px 20px;
+    }
+
+    .title {
+        font-size: 2.2em;
+        font-weight: 800;
+        margin-bottom: 50px;
+        margin-top: 25px;
+    }
+
+    .info h3 {
+        margin-top: 35px;
+    }
+
+    .card-project {
+        background-color: white;
+        border: 1px solid #fff;
+        min-height: 14em;
+        width: 23em;
+    }
+
+    .info-project+p {
+        font-size: 0.4em;
+        margin-bottom: 8px;
+    }
+
+    .info-project strong span {
+        font-size: 1em;
+    }
+
+    .info-project strong a {
+        font-size: 0.9;
+    }
+
+    .cards-contact h2 {
+        font-size: 2em;
+        font-weight: 700;
+        margin: 25px 0px 100px 0px;
+    }
+
+    footer {
+        padding: 20px 0px 10px 10px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    footer p {
+        font-size: 0.6em;
+    }
+
+    footer div a {
+        padding-right: 15px;
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width:396px)and (max-width:414px) {
+    header {
+        padding: 5px 0px 5px 0px;
+        border-radius: 0px 0px 13px 13px;
+    }
+
+    .logo>a {
+        font-size: 1em;
+        font-weight: 700;
+        margin-left: 10px;
+    }
+
+    nav {
+        margin-right: 10px;
+    }
+
+    nav a {
+        font-size: 0.58em;
+        font-weight: 500;
+    }
+
+    section {
+        padding: 5% 5%;
+    }
+
+    .main {
+        padding-top: 275px;
+    }
+
+    .title-main h2 {
+        font-size: 1.3em;
+        font-weight: 300;
+        padding-left: 90px;
+        padding-top: 15px;
+    }
+
+    .title-main h3 {
+        font-size: 2em;
+        font-weight: 500;
+        padding-left: 65px;
+        padding-top: 10px;
+        color: rgb(29, 32, 221)
+    }
+
+    .title-main h4 {
+        font-size: 1.1em;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin: 25px 10px 40px 30px;
+
+    }
+
+    .main-btn {
+        font-size: 1.6em;
+        font-weight: 300px;
+        padding: 0.7375em 1.1875em;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        margin: 10% 0% 15% 16%;
+    }
+
+    .social-icons {
+        margin-left: 15%;
+    }
+
+    .social-icons a {
+        font-size: 1.7em;
+        padding: 0px 40px 0px 20px;
+    }
+
+    .title {
+        font-size: 2.2em;
+        font-weight: 800;
+        margin-bottom: 50px;
+        margin-top: 25px;
+    }
+
+    .info h3 {
+        margin-top: 35px;
+    }
+
+    .card-project {
+        background-color: white;
+        border: 1px solid #fff;
+        min-height: 14em;
+        width: 23em;
+    }
+
+    .info-project+p {
+        font-size: 0.4em;
+        margin-bottom: 8px;
+    }
+
+    .info-project strong span {
+        font-size: 1em;
+    }
+
+    .info-project strong a {
+        font-size: 0.9;
+    }
+
+    .cards-contact h2 {
+        font-size: 2em;
+        font-weight: 700;
+        margin: 25px 0px 100px 0px;
+    }
+
+    footer {
+        padding: 20px 0px 10px 10px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    footer p {
+        font-size: 0.6em;
+    }
+
+    footer div a {
+        padding-right: 15px;
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width:415px)and (max-width:541px) {
+    header {
+        padding: 5px 0px 5px 0px;
+        border-radius: 0px 0px 13px 13px;
+    }
+
+    .logo>a {
+        font-size: 1.2em;
+        font-weight: 700;
+        margin-left: 10px;
+    }
+
+    nav {
+        margin-right: 10px;
+    }
+
+    nav a {
+        font-size: 0.7em;
+        font-weight: 400;
+    }
+
+    section {
+        padding: 10% 10% 10% 18%;
+    }
+
+    .main {
+        padding-top: 220px;
+    }
+
+    .title-main h2 {
+        font-size: 1.3em;
+        font-weight: 300;
+        padding-left: 90px;
+        padding-top: 15px;
+    }
+
+    .title-main h3 {
+        font-size: 2em;
+        font-weight: 500;
+        padding-left: 65px;
+        padding-top: 40px;
+        color: rgb(29, 32, 221)
+    }
+
+    .title-main h4 {
+        font-size: 1.1em;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin: 25px 10px 40px 30px;
+
+    }
+
+    .main-btn {
+        font-size: 1.6em;
+        font-weight: 300px;
+        padding: 0.7375em 1.1875em;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        margin: 10% 0% 15% 16%;
+    }
+
+    .social-icons {
+        margin-left: 15%;
+    }
+
+    .social-icons a {
+        font-size: 1.7em;
+        padding: 0px 40px 0px 20px;
+    }
+
+    .title {
+        font-size: 2.2em;
+        font-weight: 800;
+        margin-bottom: 50px;
+        margin-top: 25px;
+    }
+
+    .info h3 {
+        margin-top: 35px;
+    }
+
+    .card-project {
+        background-color: white;
+        border: 1px solid #fff;
+        min-height: 14em;
+        width: 23em;
+    }
+
+    .info-project+p {
+        font-size: 0.4em;
+        margin-bottom: 8px;
+    }
+
+    .info-project strong span {
+        font-size: 1em;
+    }
+
+    .info-project strong a {
+        font-size: 0.9;
+    }
+
+    .cards-contact h2 {
+        font-size: 2em;
+        font-weight: 700;
+        margin: 25px 0px 100px 0px;
+    }
+
+    footer {
+        padding: 20px 0px 10px 10px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    footer p {
+        font-size: 0.6em;
+    }
+
+    footer div a {
+        padding-right: 15px;
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width:542px)and (max-width:912) {
+    header {
+        padding: 5px 0px 5px 0px;
+        border-radius: 0px 0px 13px 13px;
+    }
+
+    .logo>a {
+        font-size: 1.2em;
+        font-weight: 700;
+        margin-left: 10px;
+    }
+
+    nav {
+        margin-right: 10px;
+    }
+
+    nav a {
+        font-size: 0.7em;
+        font-weight: 400;
+    }
+
+    section {
+        padding: 10% 10% 10% 18%;
+    }
+
+    .main {
+        padding-top: 220px;
+    }
+
+    .title-main h2 {
+        font-size: 1.3em;
+        font-weight: 300;
+        padding-left: 90px;
+        padding-top: 15px;
+    }
+
+    .title-main h3 {
+        font-size: 2em;
+        font-weight: 500;
+        padding-left: 65px;
+        padding-top: 40px;
+        color: rgb(29, 32, 221)
+    }
+
+    .title-main h4 {
+        font-size: 1.1em;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin: 25px 10px 40px 30px;
+
+    }
+
+    .main-btn {
+        font-size: 1.6em;
+        font-weight: 300px;
+        padding: 0.7375em 1.1875em;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        margin: 10% 0% 15% 16%;
+    }
+
+    .social-icons {
+        margin-left: 15%;
+    }
+
+    .social-icons a {
+        font-size: 1.7em;
+        padding: 0px 40px 0px 20px;
+    }
+
+    .title {
+        font-size: 2.2em;
+        font-weight: 800;
+        margin-bottom: 50px;
+        margin-top: 25px;
+    }
+
+    .info h3 {
+        margin-top: 35px;
+    }
+
+    .card-project {
+        background-color: white;
+        border: 1px solid #fff;
+        min-height: 14em;
+        width: 23em;
+    }
+
+    .info-project+p {
+        font-size: 0.4em;
+        margin-bottom: 8px;
+    }
+
+    .info-project strong span {
+        font-size: 1em;
+    }
+
+    .info-project strong a {
+        font-size: 0.9;
+    }
+
+    .cards-contact h2 {
+        font-size: 2em;
+        font-weight: 700;
+        margin: 25px 0px 100px 0px;
+    }
+
+    footer {
+        padding: 20px 0px 10px 10px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    footer p {
+        font-size: 0.6em;
+    }
+
+    footer div a {
+        padding-right: 15px;
+        font-size: 1.1em;
     }
 }
